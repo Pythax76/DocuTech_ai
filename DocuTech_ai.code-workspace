@@ -1,0 +1,34 @@
+# Define the content for the VSCode workspace file
+workspace_content = {
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.pythonPath": ".\\virtual_env\\Scripts\\python.exe",
+        "files.exclude": {
+            "**/__pycache__": True,
+            "**/*.pyc": True,
+            "**/*.pyo": True,
+            "**/.DS_Store": True
+        },
+        "python.linting.enabled": True,
+        "python.linting.pylintEnabled": True,
+        "python.formatting.provider": "black",
+        "python.testing.unittestEnabled": True,
+        "python.testing.pytestEnabled": False,
+        "editor.formatOnSave": True
+    }
+}
+
+# Define the file path for the workspace file
+workspace_file_path = r"C:\Users\jlawrence\OneDrive - Photronics\Source\DocuTech_ai\DocuTech_ai.code-workspace"
+
+# Write the workspace content to the file
+import json
+
+with open(workspace_file_path, 'w') as workspace_file:
+    json.dump(workspace_content, workspace_file, indent=4)
+
+workspace_file_path  # Return the file path for verification

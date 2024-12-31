@@ -1,0 +1,35 @@
+''' The Python project structure has been successfully created at:
+
+C:/Users/jlawrence/OneDrive - Photronics/Source/DocuTech_ai
+
+Key Files and Directories:
+README.md: Overview of the project.
+setup.py: For project installation.
+requirements.txt: Lists dependencies (numpy, pandas, flask as examples).
+docutech_ai/: Main Python package with modules for functionality.
+docs/: Documentation for architecture and user guide. '''
+
+# Next Steps:
+
+# Create a Virtual Environment:
+
+# Activate the following code in the terminal:
+cd "C:/Users/jlawrence/OneDrive - Photronics/Source/DocuTech_ai"
+python -m venv virtual_env
+virtual_env\\Scripts\\activate
+
+# Install Dependencies:
+
+# Activate the following code in the terminal:
+pip install -r requirements.txt
+
+
+# Run the Main Script:
+
+# Activate the following code in the terminal:
+python -m docutech_ai.main
+
+# Run Tests:
+
+# Activate the following code in the terminal:
+python -m unittest discover docutech_ai/tests
